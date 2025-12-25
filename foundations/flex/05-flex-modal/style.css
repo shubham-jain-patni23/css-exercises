@@ -7,7 +7,7 @@ html, body {
 body {
   font-family: Roboto, sans-serif;
   margin: 0;
-  background: #aaa;
+  background: #443939;
   color: #333;
   /* I'll give you this one for free lol */
   display: flex;
@@ -16,10 +16,24 @@ body {
 }
 
 .modal {
-  background: white;
+  background: rgb(208, 201, 201);
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex;
+  padding: 8px;
+  gap: 8px;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.one{
+  display: flex;
+  justify-content: space-between;
 }
 
 .icon {
@@ -27,12 +41,22 @@ body {
   font-size: 26px;
   font-weight: 700;
   background: lavender;
-  width: 42px;
+  width: 42px; 
   height: 42px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 8px;
+  flex-shrink: 0;
+  padding: 0;
+}
+
+.header{
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
 }
 
 .close-button {
@@ -56,6 +80,10 @@ button {
   border-radius: 8px;
 }
 
+.text{
+  margin-bottom: 8px;
+}
+
 button.continue {
   background: royalblue;
   border: 1px solid royalblue;
@@ -66,4 +94,8 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+.three{
+  margin-bottom: 8px;
 }
